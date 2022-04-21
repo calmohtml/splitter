@@ -1,5 +1,5 @@
-import { Pressable, Text } from "react-native";
 import React, { FC } from "react";
+import { Pressable, Text } from "react-native";
 
 interface Props {
   onPress: () => void;

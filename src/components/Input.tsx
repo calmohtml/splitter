@@ -1,5 +1,5 @@
-import { View, Text, TextInput } from "react-native";
 import React, { FC } from "react";
+import { View, Text, TextInput } from "react-native";
 
 interface Props {
   text: string;

@@ -1,5 +1,5 @@
-import { Text } from "react-native";
 import React, { FC, Fragment } from "react";
+import { Text } from "react-native";
 
 interface Props {
   tipAmountPerPerson: number;
