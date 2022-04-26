@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { View, Text } from "react-native";
+import { styles } from "../styles/GlobalStyles";
 
 interface Props {
   text: string;
@@ -8,7 +9,7 @@ interface Props {
 export const Footer: FC<Props> = ({ text }) => {
   return (
     <View>
-      <Text>{text}</Text>
+      <Text style={styles.font}>{text}</Text>
     </View>
   );
 };
