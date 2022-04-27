@@ -1,19 +1,22 @@
 import React, { FC } from "react";
-import { Pressable, Text } from "react-native";
-import { buttonStyles } from "../styles/Button";
-import { styles } from "../styles/GlobalStyles";
+import { Pressable, Text, TouchableOpacity } from "react-native";
 
 interface Props {
   onPress: () => void;
+  buttonStyles: {};
+  textStyles: {};
   text: string;
 }
 
-export const Button: FC<Props> = ({ onPress, text }) => {
+export const Button: FC<Props> = ({
+  onPress,
+  buttonStyles,
+  textStyles,
+  text,
+}) => {
   return (
-    <Pressable onPress={onPress} style={buttonStyles.button}>
-      <Text style={{ ...styles.font, color: "#fff", textAlign: "center" }}>
-        {text}
-      </Text>
-    </Pressable>
+    <TouchableOpacity onPress={onPress} style={buttonStyles}>
+      <Text style={textStyles}>{text}</Text>
+    </TouchableOpacity>
   );
 };

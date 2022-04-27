@@ -7,5 +7,6 @@ export const resultStyles = StyleSheet.create({
     alignContent: "flex-end",
     alignItems: "center",
     justifyContent: "space-between",
+    marginVertical: 10,
   },
 });

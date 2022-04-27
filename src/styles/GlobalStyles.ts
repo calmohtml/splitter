@@ -24,18 +24,24 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    borderWidth: 1,
     backgroundColor: "#ffffff",
-    paddingHorizontal: 10,
+    paddingHorizontal: 25,
     borderRadius: 10,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
   },
   row: {
     flexDirection: "row",
     justifyContent: "center",
-    marginBottom: 18,
+    marginBottom: 15,
     paddingHorizontal: 10,
   },
   resultContainer: {
     backgroundColor: "#00494d",
+    padding: 20,
+    borderRadius: 10,
+  },
+  resultButton: {
+    alignItems: "center",
   },
 });

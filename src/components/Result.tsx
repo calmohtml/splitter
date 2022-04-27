@@ -19,11 +19,13 @@ export const Result: FC<Props> = ({ tipAmountPerPerson, totalPerPerson }) => {
         {/* Ternary Operator */}
         <View>
           {tipAmountPerPerson > 0 ? (
-            <Text style={{ ...styles.font, color: "#fff" }}>
+            <Text style={{ ...styles.font, color: "#26c0ab", fontSize: 30 }}>
               ${tipAmountPerPerson.toFixed(2)}
             </Text>
           ) : (
-            <Text style={{ ...styles.font, color: "#fff" }}>$0</Text>
+            <Text style={{ ...styles.font, color: "#26c0ab", fontSize: 30 }}>
+              $0
+            </Text>
           )}
         </View>
         {/* Ternary Operator */}
@@ -36,11 +38,13 @@ export const Result: FC<Props> = ({ tipAmountPerPerson, totalPerPerson }) => {
         {/* Ternary Operator */}
         <View>
           {totalPerPerson > 0 ? (
-            <Text style={{ ...styles.font, color: "#fff" }}>
+            <Text style={{ ...styles.font, color: "#26c0ab", fontSize: 30 }}>
               ${totalPerPerson}
             </Text>
           ) : (
-            <Text style={{ ...styles.font, color: "#fff" }}>$0</Text>
+            <Text style={{ ...styles.font, color: "#26c0ab", fontSize: 30 }}>
+              $0
+            </Text>
           )}
         </View>
         {/* Ternary Operator */}
@@ -48,25 +52,3 @@ export const Result: FC<Props> = ({ tipAmountPerPerson, totalPerPerson }) => {
     </Fragment>
   );
 };
-{
-  /*
-<View style={inputStyles.input}>
-  <Text style={{ ...styles.font, paddingHorizontal: 15, color: "#7f9c9f" }}>
-    $
-  </Text>
-  <TextInput
-    onChangeText={onChangeText}
-    keyboardType="numeric"
-    style={{
-      ...styles.font,
-      writingDirection: "rtl",
-      width: "90%",
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-      textAlign: "right",
-    }}
-  />
-</View> 
-*/
-}

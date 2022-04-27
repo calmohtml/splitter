@@ -9,5 +9,7 @@ export const inputStyles = StyleSheet.create({
     flexDirection: "row",
     alignContent: "space-around",
     alignItems: "center",
+    borderRadius: 10,
+    marginVertical: 4,
   },
 });

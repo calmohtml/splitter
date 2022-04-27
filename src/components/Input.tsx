@@ -29,6 +29,7 @@ export const Input: FC<Props> = ({ text, onChangeText }) => {
             alignContent: "center",
             alignItems: "center",
             textAlign: "right",
+            paddingRight: 20,
           }}
         />
       </View>
